@@ -35,9 +35,9 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <groupId>com.redfin.hudson</groupId>
+  <groupId>org.hudsonci.plugins</groupId>
   <artifactId>url-change-trigger</artifactId>
-  <version>1.4-SNAPSHOT</version>
+  <version>1.4-h-1-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
   <name>URL Change Trigger Plugin</name>
@@ -47,21 +47,38 @@
   <licenses>
     <license>
       <name>The MIT license</name>
-      <url>https://github.com/jenkinsci/url-change-trigger-plugin/raw/master/LICENSE.txt</url>
+      <url>https://github.com/hudson3-plugins/url-change-trigger-plugin/raw/master/LICENSE.txt</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
 
   <developers>
     <developer>
-      <id>dfabulich</id>
-    </developer>
-    <developer>
-      <id>jieryn</id>
-      <name>Jesse Farinacci</name>
-      <email>jieryn@gmail.com</email>
+      <id>schristou88</id>
+      <name>Steven Christou</name>
+      <email>schristou88@gmail.com</email>
     </developer>
   </developers>
+
+  <contributors>
+    <contributor>
+      <name>dfabulich</name>
+      <roles>
+        <role>
+          Original Developer
+        </role>
+      </roles>
+    </contributor>
+    <contributor>
+      <name>Jesse Farinacci</name>
+      <email>jieryn@gmail.com</email>
+      <roles>
+        <role>
+          Original Developer
+        </role>
+      </roles>
+    </contributor>
+  </contributors>
 
   <scm>
     <connection>scm:git:git://github.com/hudson3-plugins/url-change-trigger-plugin.git</connection>
