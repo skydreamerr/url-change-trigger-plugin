@@ -47,7 +47,7 @@
   <licenses>
     <license>
       <name>The MIT license</name>
-      <url>https://github.com/hudson3-plugins/url-change-trigger-plugin/raw/master/LICENSE.txt</url>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
@@ -57,6 +57,11 @@
       <id>schristou88</id>
       <name>Steven Christou</name>
       <email>schristou88@gmail.com</email>
+      <roles>
+          <role>
+              Maintainer
+          </role>
+      </roles>
     </developer>
   </developers>
 
