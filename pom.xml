@@ -37,7 +37,7 @@
 
   <groupId>org.hudsonci.plugins</groupId>
   <artifactId>url-change-trigger</artifactId>
-  <version>1.4-h-1-SNAPSHOT</version>
+  <version>1.4-h-1</version>
   <packaging>hpi</packaging>
 
   <name>URL Change Trigger Plugin</name>
