@@ -22,6 +22,7 @@ import net.sf.json.JSONObject;
 
 import org.kohsuke.stapler.QueryParameter;
 import org.kohsuke.stapler.StaplerRequest;
+import org.antlr.runtime.RecognitionException;
 import org.apache.commons.io.FileUtils;
 
 import antlr.ANTLRException;
@@ -44,9 +45,9 @@ public class UrlChangeTrigger extends Trigger<BuildableItem> {
     	super.start(project, newInstance);
         try {
             this.tabs = CronTabList.create("* * * * *");
-        } catch (ANTLRException e) {
-            throw new RuntimeException("Bug! couldn't schedule poll");
-        }   	
+        } catch (RecognitionException e) {
+        	throw new RuntimeException("Bug! couldn't schedule poll");
+		}   	
     }
 
     private static final Logger LOGGER =

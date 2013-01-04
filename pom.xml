@@ -29,9 +29,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.jvnet.hudson.plugins</groupId>
-    <artifactId>plugin</artifactId>
-    <version>1.392</version>
+    <groupId>org.eclipse.hudson.plugins</groupId>
+    <artifactId>hudson-plugin-parent</artifactId>
+    <version>3.0.0</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
@@ -42,7 +42,7 @@
 
   <name>URL Change Trigger Plugin</name>
   <description>This plugin allows you to trigger a build when the content of an URL changes.</description>
-  <url>http://wiki.jenkins-ci.org/display/JENKINS/URL+Change+Trigger</url>
+  <url>http://wiki.hudson-ci.org/display/HUDSON/URL+Change+Trigger</url>
 
   <licenses>
     <license>
@@ -64,35 +64,10 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/url-change-trigger-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/url-change-trigger-plugin.git</developerConnection>
-    <url>https://github.com/jenkinsci/url-change-trigger-plugin</url>
+    <connection>scm:git:git://github.com/hudson3-plugins/url-change-trigger-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:hudson3-plugins/url-change-trigger-plugin.git</developerConnection>
+    <url>https://github.com/hudson3-plugins/url-change-trigger-plugin</url>
   </scm>
-
-  <repositories>
-    <repository>
-      <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
-    </repository>
-  </repositories>
-
-  <pluginRepositories>
-    <pluginRepository>
-      <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
-    </pluginRepository>
-  </pluginRepositories>
-
-  <distributionManagement>
-    <repository>
-      <id>java.net-m2-repository</id>
-      <url>http://maven.jenkins-ci.org/content/repositories/releases/</url>
-    </repository>
-    <site>
-      <id>github-project-site</id>
-      <url>gitsite:git@github.com/jenkinsci/url-change-trigger-plugin</url>
-    </site>
-  </distributionManagement>
 
   <properties>
     <!-- http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
@@ -144,6 +119,7 @@
     <taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
     <versions-maven-plugin.version>1.2</versions-maven-plugin.version>
     <xml-maven-plugin.version>1.0-beta-3</xml-maven-plugin.version>
+
   </properties>
 
   <build>
@@ -338,4 +314,11 @@
     </plugins>
   </reporting>
 
+  <dependencies>
+    <dependency>
+      <groupId>org.antlr</groupId>
+      <artifactId>antlr</artifactId>
+      <version>3.5-rc-2</version>
+    </dependency>
+  </dependencies>
 </project>
