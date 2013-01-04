@@ -141,7 +141,7 @@
     <taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
     <versions-maven-plugin.version>1.2</versions-maven-plugin.version>
     <xml-maven-plugin.version>1.0-beta-3</xml-maven-plugin.version>
-
+    <hudsonTags>trigger</hudsonTags>
   </properties>
 
   <build>
