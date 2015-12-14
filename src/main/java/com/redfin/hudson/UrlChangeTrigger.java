@@ -15,6 +15,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLConnection;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -61,7 +62,11 @@ public class UrlChangeTrigger extends Trigger<BuildableItem> {
     public void run() {
         try {
             LOGGER.log(Level.FINER, "Testing the file {0}", url);
-            String currentMd5 = Util.getDigestOf(url.openStream());
+            URLConnection connection = url.openConnection();
+            connection.setConnectTimeout(5 * 60 * 1000);
+            connection.setReadTimeout(5 * 60 * 1000);
+            
+            String currentMd5 = Util.getDigestOf(connection.getInputStream());
 
             String oldMd5;
             File file = getFingerprintFile();
